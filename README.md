@@ -3,23 +3,23 @@ A minimally modified derivative of HQGS for research use
 
 ## Environmental setting
 you can pull with 
-'''
+```
 docker pull sangwoogi/hqgs:latest
-'''
+```
 or if you want to build it on yourself then,
-'''
+```
 docker build --build-arg TORCH_FLAVOR=nightly -t hqgs:latest .
 docker run --gpus all -it --rm -v ~/workspace:/workspace hqgs:latest
-'''
+```
 
 ## Running codes
 1. preparing datasets of COLMAP types (images&sparse/0)
 2. making directory ./sr_seen and add images for training
 3. running preparing_train.sh
-'''
+```
 python gradient.py
 python images_concat.py
-'''
+```
 4. training and rendering
 
 ## License
