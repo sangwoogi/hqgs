@@ -21,6 +21,19 @@ python gradient.py
 python images_concat.py
 ```
 4. training and rendering
+```
+<workspace>
+|---DATASET
+|   |---<Scene>
+|   |   |---<images>
+|   |   |---<sparse>
+|   |---<another scenes>
+...
+|---gradient.py
+|---images_concat.py
+|---sr.pth
+|---rgb_sr.pth
+```
 
 ## License
 
